@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add List</title>
+    
+    </head>
+
+    <body>
+        <header>
+            <h1>Add a New List</h1>
+        </header>
+        <main>
+            <form id="list-form">
+                <label for="list-name">List Name:</label>
+                <input type="text" id="list-name" placeholder="Enter list name" required>
+                <button type="submit">Create List</button>
+            </form>
+            <div id="items-container" style="display: none;">
+                <form id="item-form">
+                    <label for ="item-input">Item:</label>
+                    <input type="text" id="item-input" placeholder="Enter item" required>
+                    <button type="submit">Add Item</button>
+                </form>
+                <ul id="item-list"></ul>
+            </div>
+        </main>
+        <script src="add_list.js"></script>
+    </body>
+
+</html>
